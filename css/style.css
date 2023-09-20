@@ -1,0 +1,348 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto&display=swap");
+/* Обнуление */
+* {
+  padding: 0;
+  margin: 0;
+  bottom: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  bottom: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #000;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* -------- */
+@font-face {
+  font-family: "Bold";
+  src: url("../fonts/gothampro_bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Med";
+  src: url("../fonts/gothampro_medium.ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.hide {
+  display: none;
+}
+
+.opacity {
+  opacity: 0.4;
+}
+
+body {
+  background-color: #f0f0f0;
+}
+
+.slippers {
+  overflow: hidden;
+  width: 100%;
+}
+.slippers .slippers__subHead {
+  padding: 11px 13px 10px 14px;
+  background-color: #F19D2F;
+}
+.slippers .slippers__subHead h3 {
+  font-family: "Med";
+  font-size: 12.7px;
+  font-weight: 400;
+  line-height: normal;
+  color: #2C2B31;
+}
+.slippers .slippers__logo {
+  background-color: #FFD1AC;
+  padding: 19px 86px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.slippers .slippers__logo h3 {
+  font-family: "Med";
+  font-size: 13.469px;
+  font-weight: 400;
+  line-height: normal;
+  color: #2C2B31;
+}
+.slippers .slippers__banner {
+  width: 100%;
+  background: url("../img/banner.jpg") no-repeat;
+  background-size: cover;
+  padding: 13px 14px;
+}
+.slippers .slippers__banner .banner__wrapper {
+  margin-top: 209px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.slippers .slippers__banner .banner__wrapper .banner__timer {
+  padding: 7.1px 9px;
+  border-radius: 7.101px;
+  background: #F19D2F;
+  font-family: "Bold";
+  font-size: 10.6px;
+  font-weight: 700;
+  line-height: normal;
+  color: #fff;
+  text-align: center;
+}
+.slippers .slippers__banner .banner__wrapper .banner__timer h3 {
+  margin-bottom: 5px;
+}
+.slippers .slippers__banner .banner__wrapper .banner__timer span {
+  font-size: 21.254px;
+}
+.slippers .slippers__banner .banner__wrapper .banner__price {
+  padding: 7.1px 9px;
+  border-radius: 7.101px;
+  background: #37D997;
+  text-align: center;
+  font-family: "Bold";
+  font-size: 18.7px;
+  font-weight: 700;
+  line-height: normal;
+  color: #fff;
+}
+.slippers .slippers__banner .banner__wrapper .banner__price h3:last-child {
+  font-size: 22.3px;
+}
+.slippers .slippers__banner .banner__wrapper .banner__price .banner__latestPrise {
+  position: relative;
+}
+.slippers .slippers__banner .banner__wrapper .banner__price .banner__latestPrise::after {
+  position: absolute;
+  content: "";
+  top: 40%;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 3.5px;
+  background: #E27500;
+}
+.slippers .slippers__product {
+  padding: 11px 16px 41px;
+}
+.slippers .slippers__product .product__header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.slippers .slippers__product .product__header .product__headerItem {
+  font-family: "Med";
+  font-size: 12.67px;
+  font-weight: 400;
+  line-height: normal;
+  color: #fff;
+}
+.slippers .slippers__product .product__header .product__headerItem:first-child {
+  color: #2C2B31;
+}
+.slippers .slippers__product .product__header .product__headerItem:last-child {
+  border-bottom: 1px solid #37D997;
+}
+.slippers .slippers__product .product__header .product__headerItem:last-child a {
+  color: #37D997;
+}
+.slippers .slippers__product .product__title {
+  font-family: "Bold";
+  font-size: 19.167px;
+  font-weight: 700;
+  line-height: normal;
+  color: #2C2B31;
+  margin: 20px 0;
+  text-transform: uppercase;
+}
+.slippers .slippers__product .product__slider {
+  width: 100%;
+}
+.slippers .slippers__product .product__slider .opened {
+  width: 100%;
+}
+.slippers .slippers__product .product__slider .slider__items {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.slippers .slippers__product .product__slider .slider__items img {
+  width: 23%;
+}
+.slippers .product__info {
+  margin: 20px 0;
+  font-family: "Med";
+  font-size: 15.24px;
+  font-weight: 400;
+  line-height: normal;
+  color: #000;
+}
+.slippers .product__info .info__deliverTime span {
+  font-family: "Bold";
+  font-weight: 700;
+}
+.slippers .product__info .info__from {
+  margin: 12px 0;
+}
+.slippers .product__info .info__from span {
+  font-family: "Bold";
+  font-weight: 700;
+}
+.slippers .product__info .info__rating {
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.slippers .product__info .info__rating .rating__mark {
+  display: flex;
+  align-items: center;
+}
+.slippers .product__info .info__rating .rating__mark img {
+  margin-right: 5%;
+}
+.slippers .product__ordering a button {
+  width: 100%;
+  padding: 10px 20px;
+  background: #37D997;
+  border-radius: 15px;
+  font-family: "Med";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: normal;
+  color: #fff;
+  border: none;
+}
+.slippers .product__ordering .ordering__choosing {
+  margin-bottom: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.slippers .product__ordering .ordering__choosing .ordering__choosingColor, .slippers .product__ordering .ordering__choosing .choosing__choosingSize {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+.slippers .product__ordering .ordering__choosing .ordering__choosingColor h5, .slippers .product__ordering .ordering__choosing .choosing__choosingSize h5 {
+  font-family: "Med";
+  font-size: 10px;
+  font-weight: 400;
+  line-height: normal;
+  color: #2c2b31;
+  margin-bottom: 5px;
+  opacity: 0.7;
+}
+.slippers .product__ordering .ordering__choosing .ordering__choosingColor .choosing__wrapper, .slippers .product__ordering .ordering__choosing .choosing__choosingSize .choosing__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
+.slippers .product__ordering .ordering__choosing .ordering__choosingColor .choosing__wrapper .down::after, .slippers .product__ordering .ordering__choosing .choosing__choosingSize .choosing__wrapper .down::after {
+  content: "";
+  background: url(../img/arrow.svg) no-repeat;
+  position: absolute;
+  top: 45%;
+  left: 80%;
+  z-index: 1;
+  width: 100px;
+  height: 100px;
+}
+.slippers .product__ordering .ordering__choosing .ordering__choosingColor .choosing__wrapper .up::after, .slippers .product__ordering .ordering__choosing .choosing__choosingSize .choosing__wrapper .up::after {
+  content: "";
+  background: url(../img/arrowUp.svg) no-repeat;
+  position: absolute;
+  top: 45%;
+  left: 80%;
+  z-index: 1;
+  width: 100px;
+  height: 100px;
+}
+.slippers .product__ordering .ordering__choosing .ordering__choosingColor .choosing__wrapper .color__item, .slippers .product__ordering .ordering__choosing .ordering__choosingColor .choosing__wrapper .size__item, .slippers .product__ordering .ordering__choosing .choosing__choosingSize .choosing__wrapper .color__item, .slippers .product__ordering .ordering__choosing .choosing__choosingSize .choosing__wrapper .size__item {
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 14px 30px;
+  border-radius: 15px;
+  background-color: #fff;
+  font-family: "Bold";
+  font-size: 21.7px;
+  font-weight: 700;
+  line-height: normal;
+  color: #2c2b31;
+  text-align: center;
+  position: relative;
+}
